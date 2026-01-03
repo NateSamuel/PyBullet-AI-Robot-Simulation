@@ -1,0 +1,64 @@
+<?xml version="1.0"?><robot name="pepe">
+	<link name="0">
+		<visual>
+			<geometry>
+				<cylinder length="3.853667412220549" radius="0.7260619789786245"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="3.853667412220549" radius="0.7260619789786245"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="6.382215925029434"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyz="0"/>
+		</inertial>
+	</link>
+	<link name="11">
+		<visual>
+			<geometry>
+				<cylinder length="2.088322805148008" radius="0.4615369057400561"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="2.088322805148008" radius="0.4615369057400561"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1.397527530697729"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyz="0"/>
+		</inertial>
+	</link>
+	<link name="12">
+		<visual>
+			<geometry>
+				<cylinder length="2.088322805148008" radius="0.4615369057400561"/>
+			</geometry>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="2.088322805148008" radius="0.4615369057400561"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="1.397527530697729"/>
+			<inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0" ixz="0" iyz="0"/>
+		</inertial>
+	</link>
+	<joint name="11_to_0" type="revolute">
+		<parent link="0"/>
+		<child link="11"/>
+		<axis xyz="3.746142232510863e-05 0.7491909850798474 0.6623540340873073"/>
+		<limit effort="500" upper="3.1415" lower="-3.1415" velocity="10"/>
+		<origin rpy="4.804155286567825 1.4607881599577943 4.203243383041958" xyz="0.89991 0.27593836606898703 0.43439377177281513"/>
+	</joint>
+	<joint name="12_to_0" type="revolute">
+		<parent link="0"/>
+		<child link="12"/>
+		<axis xyz="3.746142232510863e-05 0.7491909850798474 0.6623540340873073"/>
+		<limit effort="500" upper="3.1415" lower="-3.1415" velocity="10"/>
+		<origin rpy="7.206232929851738 1.4607881599577943 4.203243383041958" xyz="0.89991 0.27593836606898703 0.43439377177281513"/>
+	</joint>
+</robot>
